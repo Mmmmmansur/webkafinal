@@ -1,0 +1,242 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and text color */
+body {
+    background-color: #f0f0f0;
+    /* Light gray background color */
+    color: #333;
+    /* Dark text color */
+    font-family: Arial, sans-serif;
+    /* Use a common font family */
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right; /* Добавленный стиль для выравнивания текста справа */
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+#logo img {
+    height: 30px;
+    width: auto;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Выравнивание элементов вправо */
+}
+
+#menu li {
+    margin: 0 10px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, font-style 0.3s;
+}
+
+#menu a:hover {
+    color: red;
+    font-style: italic;
+}
+
+#register-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#register-btn:hover {
+    background-color: darkred;
+}
+
+/* Style content sections */
+section {
+    padding: 20px;
+    background-color: #fff;
+    /* White section background color */
+    margin: 20px;
+    border: 1px solid #ddd;
+    /* Light gray border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+/* Center-align section headings */
+section h1 {
+    text-align: center;
+}
+
+/* Add spacing between sections */
+section:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+/* Style content sections */
+section#martial-arts {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Прозрачный белый цвет */
+    margin: 20px 0;
+    /* Убираем отступ снизу и сверху */
+    border: 1px solid #888; /* Серый цвет для границы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+/* Center-align section headings */
+section h1 {
+    text-align: center;
+}
+
+/* Add spacing between sections */
+section:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+/* Style the photo gallery */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Обернуть карточки на следующей строке при нехватке места */
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Style the card */
+.card {
+    width: calc(25% - 10px); /* Чтобы обеспечить 4 карточки в одной строке */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    max-width: 100%; /* Максимальная ширина изображения внутри карточки */
+    max-height: 200px; /* Максимальная высота изображения */
+    object-fit: cover; /* Масштабирование фотографии, чтобы она полностью заполняла контейнер */
+}
+
+.card button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #cc0000;
+    /* Darker red on hover */
+}
+
+/* Style the footer (contact section) */
+/* Style the footer (contact section) */
+#contact {
+    background-color: #333;
+    /* Dark background color for the contact section */
+    color: #fff;
+    /* White text color in the contact section */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+    /* Убираем отступ снизу */
+    margin-left: 0;
+    /* Убираем отступ слева */
+    margin-right: 0;
+    /* Убираем отступ справа */
+}
+
+/* Add a hover effect for anchor tags in the navigation menu */
+nav a:hover {
+    color: #ff0000;
+    /* Red text color on hover */
+}
+
+/* Add a hover effect for the registration button */
+#register-btn:hover {
+    background-color: #cc0000;
+    /* Darker red on hover */
+}
+
+.footer {
+    background-color: #333;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+.contacts {
+    padding: 250px 0;
+    background-color: #fff;
+}
+
+.contacts__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contacts__item {
+    opacity: 0;
+    transform: rotate(180deg);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contacts__item.animation-class {
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.form button {
+    height: 40px;
+    width: 300px;
+}
