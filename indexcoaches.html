@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Martial Arts Center - Home</title>
+    <link rel="stylesheet" type="text/css" href="stylearts.css">
+    <link rel="icon" href="images/icons8-muay-thai-64.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-right: 5px;
+    }
+
+    #logo img {
+        height: 30px;
+       
+        width: auto;
+        
+    }
+
+    #menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu li {
+        margin: 0 10px;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    #register-btn {
+        background-color: red;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #register-btn:hover {
+        background-color: darkred;
+    }
+</style>
+</head>
+
+<body>
+    <nav>
+        <div id="logo-container">
+            <a href="index.html">
+                <img src="images/imgonline-com-ua-Resize-tkwbngRTLsIo3i2N.jpg" alt="Logo">
+                <ul id="menu">
+                    <li><a href="index.html">About us</a></li>
+                    <li><a href="index.html">Our Hall</a></li>
+                    <li><a href="indexarts.html">Our Martial Arts</a></li>
+                    <li><a href="indexcoaches.html">Our coaches</a></li>
+                    <li><a href="indexequip.html">Our equipment</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="indexorgs.html">Academies</a></li>
+                </ul>
+                <button id="register-btn">Registration</button>
+    </nav>
+   
+    <section id="our-coaches">
+        <h1>Coaches in our Center</h1>
+        <div class="photo-gallery">
+            <div class="card">
+                <h3>Muay Thai</h3>
+                <img src="images/taiski.jpg" alt="Боевое искусство 1">
+                <button class="btn">Sign up</button>
+            </div>
+            <div class="card">
+                <h3>Boxing</h3>
+                <img src="images/trener.jpg" alt="Боевое искусство 2">
+                <button class="btn">Sign up</button>
+            </div>
+            <div class="card">
+                <h3>Brazilian Jiu Jitsu</h3>
+                <img src="images/jj2.jpg" alt="Боевое искусство 3">
+                <button class="btn">Sign up</button>
+            </div>
+            <div class="card">
+                <h3>Kickboxing</h3>
+                <img src="images/1box.jpg" alt="Боевое искусство 4">
+                <button class="btn">Sign up</button>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="contacts">
+        <div class="container">
+            <h2 class="title">Contacts</h2>
+            <div class="contacts__content">
+                <div class="contacts__left contacts__item scroll-item">
+                    <form action="" class="form">
+                        <input type="text" placeholder="Name">
+                        <input type="tel" placeholder="Phone number">
+                        <button>Send</button>
+                    </form>
+                </div>
+                <div class="contacts__right contacts__item scroll-item">
+                    <a href="tel:2342342" class="phone">+71323501230</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <small class="rights">
+            All rights reserved
+        </small>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
